@@ -71,37 +71,29 @@ span {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #36393F;
-  /* Warna latar belakang layer */
   border-radius: 10px;
-  /* Melengkungkan layer */
   padding: 20px;
   border: 1px solid #ccc;
 }
 
 #layer button {
   background-color: transparent;
-  /* Warna latar belakang tombol di dalam layer */
   color: #fff;
   border: none;
   width: 40px;
-  /* Lebar tombol */
   height: 40px;
-  /* Tinggi tombol */
   margin: 5px;
   border-radius: 10px;
-  /* Melengkungkan tombol di dalam layer */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 #layer button:hover {
   background-color: #808080;
-  /* Warna tombol saat dihover */
 }
 
 #layer button img {
   max-width: 100%;
   max-height: 100%;
   transform: translateY(16%);
-  /* Posisi gambar secara vertikal */
 }
