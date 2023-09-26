@@ -8,5 +8,3 @@ tampilkanTombolButton.addEventListener("click", function () {
         layer.style.display = "none";
     }
 });
-
-// Optional: Tambahkan event listener untuk tombol-tombol di dalam layer jika diperlukan.
