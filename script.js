@@ -9,7 +9,7 @@ tampilkanTombolButton.addEventListener("click", function () {
     }
 });
 
-var targetDate = new Date("September 26, 2024 00:00:00").getTime();
+var targetDate = new Date("September 26, 2024 06:59:59").getTime();
 
 var countdown = setInterval(function() {
     var now = new Date().getTime();
