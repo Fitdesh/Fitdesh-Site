@@ -31,16 +31,22 @@ var countdown = setInterval(function() {
 
 var teksTerlindungi = document.getElementById('teksTerlindungi');
 
-teksTerlindungi.addEventListener('selectstart', function(e) {
-    e.preventDefault();
-});
-
-teksTerlindungi.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
-
-teksTerlindungi.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && e.key === 'a') {
+document.addEventListener('selectstart', function (e) {
+    if (e.target !== teksTerlindungi) {
         e.preventDefault();
     }
 });
+
+document.addEventListener('contextmenu', function (e) {
+    if (e.target !== teksTerlindungi) {
+        e.preventDefault();
+    }
+});
+
+document.addEventListener('keydown', function (e) {
+    var selectedText = window.getSelection().toString();
+    if (e.ctrlKey && e.key === 'a' && selectedText !== teksTerlindungi.innerText) {
+        e.preventDefault();
+    }
+});
+
