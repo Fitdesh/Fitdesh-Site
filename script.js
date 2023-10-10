@@ -28,3 +28,19 @@ var countdown = setInterval(function() {
         document.getElementById("countdown").innerHTML = "Domain Telah Berakhir!";
     }
 }, 1000);
+
+var teksTerlindungi = document.getElementById('teksTerlindungi');
+
+teksTerlindungi.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
+
+teksTerlindungi.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+teksTerlindungi.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key === 'a') {
+        e.preventDefault();
+    }
+});
